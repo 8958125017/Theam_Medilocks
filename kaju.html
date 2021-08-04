@@ -1,0 +1,33 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<input class="form-btn" type="button" value="Name" > 
+<div class="hidden-form" >
+<input  type="text" name="nm" >
+<input  type="text" name="nm" >
+<input  type="text" name="nm" >
+<input type="text" name="nm" >
+</div>
+
+<ul class="form">
+<li> 
+<input class="form-btn" type="button" name="location" value="Location" >
+<input class="hidden-form" type="text" name="loc" >
+</li>
+</ul>
+<script>
+    $('.form-btn').click(function(){
+$(this).next().toggleClass('show-form');
+});
+</script>
+<style>
+    .form{
+ float:left;  
+  list-style:none;
+}
+.hidden-form{
+  visibility:hidden;
+  }
+.show-form{
+visibility: visible !important;
+}
+</style>
